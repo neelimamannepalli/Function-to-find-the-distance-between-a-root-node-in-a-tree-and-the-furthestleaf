@@ -1,0 +1,19 @@
+let nodeObj = {left:{} ,right:{} } 
+function getFarthestDistance(passedNode,nodeObj){
+  //check if root is null 
+  if (!nodeObj) return 0;
+  
+  //if root is the target value return that with ne increment
+  if(nodeObj === passedNode){
+    
+   return count +1 
+  }
+  //if not check left node and right node // if anything is 0 check for alternate one  in recursive way
+  else{
+    count = getFarthestDistance(nodeObj.left,passedNode) || getFarthestDistance(nodeObj.right,passedNode)
+    return count +1
+  }
+  
+  
+  
+}
